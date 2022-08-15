@@ -1,12 +1,11 @@
-import React, { Component } from "react";
-import Card from "./Card";
-import data from "../data/data.json";
+import React from "react";
+import Product from "./Product";
 
-function Home() {
+function Home({ products }) {
   return (
     <div className="Grid animated bounceInUp">
-      {data.map((card) => (
-        <Card duration={150} key={card.id} card={card} />
+      {products.map((product) => (
+        <Product duration={150} key={product.id} product={product} />
       ))}
     </div>
   );

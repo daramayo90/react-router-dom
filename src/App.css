@@ -10,10 +10,11 @@ html, body {
 }
 
 .Grid {
-  margin: 5%;
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: 5%;
 }
 
 .static-logo {
